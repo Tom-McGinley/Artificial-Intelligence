@@ -1,0 +1,240 @@
+<html><head> 
+  <meta charset="UTF-8" contents="width=device-width, initial-scale=1" name="viewport"> 
+  <title>Artificial Intelligence - Development | Tom McGinley</title> 
+<style>
+    .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+p {
+        font-family: 'Courier New', serif;
+    }
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  background-color: black;
+    color: #818181;
+}
+html {
+  height: 100%;
+  margin: 0;
+}
+body {
+  height: 100%;
+  margin: 0;
+}
+.alert {
+    padding: 20px;
+    margin: 15px;
+    background-color: red;
+    color: white;
+    margin-bottom: 15px;
+    transition: opacity 0.6;
+    opacity: 1;
+            }
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+        font: 20px "Calibri", sans-serif;
+            }
+            .closebtn:hover{
+                color: black;
+            }
+.img1, .img2, .img3 {
+ position: relative;
+ opacity: 0.9;
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ min-height: 360px;
+}
+.img1 {
+ background-image: url("https://cdn.lowgif.com/medium/c59727d21202020f-sci-fi-circle-exploration-2-by-david-herreman-dribbble.gif");
+ min-height: 640px;
+ opacity: 0.75;
+ filter: gray-scale(50%);
+            }
+.img2 {
+ background-image: url("https://apollocurrency.com/static/media/document-gif.1d30b5a0.gif");
+ opacity: 0.75;
+            }
+.img3 {
+ background-image: url("https://i1.wp.com/www.marktechpost.com/wp-content/uploads/2019/09/ezgif-3-d243f807b32f-2.gif?fit=540%2C360&ssl=1");
+ opacity: 0.75;
+            }
+
+.caption {
+ position: absolute;
+ left: 0;
+ top: 50%;
+ width: 100%;
+ text-align: center;
+ color: rgb(0, 0, 0);
+ opacity: 1;
+ z-index: 10;
+}
+h3 {
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  font: 20px "Courier New", sans-serif;
+  color: white;
+  text-align: center;
+}
+.title {
+  letter-spacing: 10px;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: white;
+ }
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+      
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    color: black;
+}
+
+.container {
+  padding: 0 16px;
+  height: 250px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style> 
+<script>
+    function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.body.style.backgroundColor = "white";
+}
+</script>
+</head> 
+ <body> 
+ <!--Navbar-->
+ <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="https://code.dcoder.tech/files/design/5ed9aab7925ae47ccd0e0bae/artificial-intelligence---tom-mcginley">Home</a>
+  <a href="https://code.dcoder.tech/files/design/5ee9a3bb9d04d1511aaa05ee/introduction--ai">Introduction</a>
+  <a href="https://code.dcoder.tech/files/design/5eec23ebf2d50c510db7fec2/development--ai">Development</a>
+  <a href="https://code.dcoder.tech/files/design/5ef02c2902d5050537f035b8/applications--ai">Applications</a>
+  <a href="https://code.dcoder.tech/files/design/5ef097c1ca8ca405368f6c26/careers--ai">Careers</a>
+  <a href="https://code.dcoder.tech/files/design/5ef17255982b81052ea5adad/references--ai">References</a>
+</div>
+
+
+<div id="main">
+<span style="font-size:30px;cursor:pointer;" onclick="openNav()">☰</span>
+</div>
+    
+ 
+  <!--First image of the webpage--> 
+  <div class="img1"> 
+   <div class="caption"> 
+    <span class="title" style="opacity:1;">Development - Artificial Intelligence</span> 
+    <hr style="border:1px solid rgb(24, 24, 24);width:900px;"> 
+    <h3>by Tom McGinley</h3> 
+   </div> 
+  </div> 
+  <!--Element containing the first section of information--> 
+  <div style="position:relative;"> 
+   <div style="color:rgb(255, 255, 255);background-color:rgb(50, 50, 50);text-align:center;padding:50px 80px;text-align: justify;"> 
+    <h3 style="color:#c2c2c2;">Timeline</h3> 
+    <hr style="border:1px solid rgb(24, 24, 24);width:600px">
+<p style="left:1%; width:500px; position:relative;">1950 - Turing Test, created by Alan Turing was a test to determine whether Artificial Intelligence was achievable by a tested model/machine.</p>
+<p style="left:55%; width:500px; position:relative;">(1955 - 1956) - First Running AI program, Logic Theorist.</p>
+<p style="left:1%; width:500px; position:relative;">1957 - Rosenblatt’s Perceptron, the simplest version of a neural network, containing a single neuron, paved the way for future neural networks. Enabled pattern recognition through a two-layered machine learning network.</p>
+<p style="left:55%; width:500px; position:relative;">1958 - Programming language “Lisp” was created by John McCarthy, popular in Artificial Intelligence research.</p>
+<p style="left:1%; width:500px; position:relative;">1961 - Unimate, the first industrialised robot created by George Devol.</p>
+<p style="left:55%; width:500px; position:relative;">(1964 - 1966) - ELIZA, a natural language processing program created by Joseph Weizenbaum, acted as a Rogerian psychotherapist.
+<a href="https://www.masswerk.at/elizabot/">https://www.masswerk.at/elizabot/</a></p> 
+<p style="left:1%; width:500px; position:relative;">1966 - Shakey, a machine developed at the Artificial Intelligence Center at SRI International, capable of performing tasks involving planning, route-finding and re-arrangement of small objects.</p> 
+      <hr style="border:1px solid rgb(24, 24, 24);width:650px;-webkit-transform:rotate(90deg);z-index:5px;">
+<p style="left:55%; width:500px; position:relative;">1997 - Deep Blue, a computer program capable of playing chess, developed by IBM, was able to beat Garry Kasparov, a reigning chess master.</p> 
+<p style="left:1%; width:500px; position:relative;">2002- Roomba, first commercialised Artificial Intelligence robot, a vacuuming robot capable of cleaning the house whilst avoiding obstacles and mapping-out it’s environment.</p>
+<p style="left:55%; width:500px; position:relative;">2007 - Apple’s Siri, originally created by Adam Cheyer, Dag Kittlaus, and Tom Gruber, AI experts and engineers of the Stanford Research Institute. Breakthrough in technology with human-to-machine interaction with voice-commands integrated and conversations able to be held between program and a user.</p>
+<p style="left:1%; width:500px; position:relative;">2011 - IBM’s Watson, created as a question answering computer program through natural language processing and other machine learning methods to function.</p>
+<p style="left:55%; width:500px; position:relative;">2014 - Alexa, a virtual assistant , similar to Apple’s Siri and Microsoft’s Cortana was developed and released by Amazon</p>
+      </div>
+   </div>
+     
+<div class="img2"></div>
+     
+     <!--Element containing the third section of information-->
+ <div style="position:relative;">
+    <div style="color:rgb(90, 90, 90);background-color:rgb(255, 255, 255);text-align:center;padding:50px 80px;text-align: justify;">
+     <h3 style="color:#c2c2c2;">Future</h3>
+     <hr style="border:1px solid rgb(24, 24, 24);width:600px;">
+        <p>Currently many artificial intelligent systems are considered as ‘weak’, meaning that the applications of AI are narrowly focused, where the AI model specialises with a specific task, e.g. playing chess or search recommendations etc. A more advanced form of AI, ‘strong’ or ‘generalised’ where it is able to perform multitudinous tasks such as being able to mimic a human and their daily tasks etc. 
+<br><br>
+There are also the dangers of Artificial Intelligence with the possibilities of using it for military and weaponised purposes. If a machine was created to fight in battle, whether it be an android or autonomous targeting system the application could malfunction or if not programmed correctly could result in errors leading to mass casualties, especially if hacked and control to the machine was restricted. Many large tech company owners and researchers, such as Bill Gates, Elon Musk, Stephen Hawking etc, have established their concerns with the possibilities of AI technology if it was to be used for devastating or ill-hearted intentions.
+</p>
+    </div>
+  </div>
+     
+     
+     <!--https://freefrontend.com/css-timelines/        <video autoplay muted loop id="myVideo">
+  <source src="rain.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>-->
+     
+     
+ </body></html>
