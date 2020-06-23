@@ -1,12 +1,12 @@
 <html><head> 
   <meta charset="UTF-8" contents="width=device-width, initial-scale=1" name="viewport"> 
-  <title>Artificial Intelligence - Intro | Tom McGinley</title> 
+  <title>Artificial Intelligence - Home | Tom McGinley</title> 
 <style>
     .sidenav {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 4;
+  z-index: 1;
   top: 0;
   left: 0;
   background-color: #111;
@@ -14,9 +14,7 @@
   transition: 0.5s;
   padding-top: 60px;
 }
-p {
-        font-family: 'Courier New', serif;
-    }
+
 .sidenav a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
@@ -41,39 +39,36 @@ p {
 #main {
   transition: margin-left .5s;
   padding: 16px;
-  background-color: black;
-    color: #818181;
 }
-html {
-  height: 100%;
-  margin: 0;
-}
-body {
-  height: 100%;
-  margin: 0;
-}
-.alert {
-    padding: 20px;
-    margin: 15px;
-    background-color: red;
-    color: white;
-    margin-bottom: 15px;
-    transition: opacity 0.6;
-    opacity: 1;
+html {              height: 100%;
+              margin: 0;
             }
-.closebtn {
-    margin-left: 15px;
-    color: white;
-    font-weight: bold;
-    float: right;
-    font-size: 22px;
-    line-height: 20px;
-        font: 20px "Calibri", sans-serif;
+            body {
+              height: 100%;
+              margin: 0;
+            }
+            .alert {
+                padding: 20px;
+                margin: 15px;
+                background-color: purple;
+                color: white;
+                margin-bottom: 15px;
+                transition: opacity 0.6;
+                opacity: 1;
+            }
+            .closebtn {
+                margin-left: 15px;
+                color: white;
+                font-weight: bold;
+                float: right;
+                font-size: 22px;
+                line-height: 20px;
+                font: 20px "Calibri", sans-serif;
             }
             .closebtn:hover{
                 color: black;
             }
-.img1, .img2, .img3 {
+.img1, .img2 {
  position: relative;
  opacity: 0.9;
  background-attachment: fixed;
@@ -82,38 +77,26 @@ body {
  background-size: cover;
  min-height: 360px;
 }
-.img1 {
- background-image: url("https://api.time.com/wp-content/uploads/2020/01/artificial-intelligence-white-collar.-work.jpg?w=800&quality=85");
- min-height: 640px;
- opacity: 0.75;
- filter: gray-scale(50%);
-            }
-.img2 {
- background-image: url("https://miro.medium.com/max/3840/1*etDJsZIWf76sb1P_l6ZW3w.gif");
- opacity: 0.75;
-            }
-.img3 {
- background-image: url("https://i1.wp.com/www.marktechpost.com/wp-content/uploads/2019/09/ezgif-3-d243f807b32f-2.gif?fit=540%2C360&ssl=1");
- opacity: 0.75;
+            .img1 {
+              background-image: url("https://trusaic.com/wp-content/uploads/2018/07/AdobeStock_210275088.jpeg");
+            min-height: 640px;
             }
 
-.caption {
- position: absolute;
- left: 0;
- top: 50%;
- width: 100%;
- text-align: center;
- color: rgb(0, 0, 0);
- opacity: 1;
- z-index: 10;
-}
-h3 {
-  letter-spacing: 8px;
-  text-transform: uppercase;
-  font: 20px "Courier New", sans-serif;
-  color: rgb(0, 0, 0);
-  text-align: center;
-}
+            .caption {
+              position: absolute;
+              left: 0;
+              top: 50%;
+              width: 100%;
+              text-align: center;
+              color: rgb(0, 0, 0);
+            }
+            h3 {
+              letter-spacing: 8px;
+              text-transform: uppercase;
+              font: 20px "Courier New", sans-serif;
+              color: rgb(0, 0, 0);
+              text-align: center;
+            }
 .title {
   letter-spacing: 10px;
   font-size: 50px;
@@ -152,8 +135,11 @@ html {
   clear: both;
   display: table;
 }
-    </style>
-    <script>
+    p {
+        font-family: 'Courier New', serif;
+    }
+</style> 
+<script>
     function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
   document.getElementById("main").style.marginLeft = "250px";
@@ -166,7 +152,7 @@ function closeNav() {
   document.getElementById("main").style.marginLeft = "0";
   document.body.style.backgroundColor = "white";
 }
-    </script>
+</script> 
 </head> 
  <body> 
  <!--Navbar-->
@@ -180,73 +166,104 @@ function closeNav() {
   <a href="https://code.dcoder.tech/files/design/5ef17255982b81052ea5adad/references--ai">References</a>
 </div>
 
-
-<div id="main">
-<span style="font-size:30px;cursor:pointer;" onclick="openNav()">☰</span>
+<div id="main" style="background-color:black;">
+<span style="font-size:30px;cursor:pointer;color:white;" onclick="openNav()">☰</span>
 </div>
     
  
   <!--First image of the webpage--> 
   <div class="img1"> 
    <div class="caption"> 
-    <span class="title" style="opacity:1;">Introduction - Artificial Intelligence</span> 
+    <span class="title">Artificial Intelligence</span> 
     <hr style="border:1px solid rgb(24, 24, 24);width:900px;"> 
     <h3>by Tom McGinley</h3> 
    </div> 
   </div> 
   <!--Element containing the first section of information--> 
   <div style="position:relative;"> 
-   <div style="color:rgb(255, 255, 255);background-color:rgb(50, 50, 50);text-align:center;padding:50px 80px;text-align: justify;"> 
-    <h3 style="color:#c2c2c2;">Alan Turing</h3> 
-    <hr style="border:1px solid rgb(24, 24, 24);width:600px">
-       <p style="text-align:center;">
-           "A computer would deserve to be called intelligent if it could deceive a human into believing that it was human," - Alan Turing
-       </p>
-    </div>
-   </div>
-     
-     <!--Element containing the second section of information-->
-       <div style="position:relative;">
-    <div style="color:rgb(90, 90, 90);background-color:rgb(255, 255, 255);text-align:center;padding:50px 80px;text-align: justify;">
-     <h3 style="color:#c2c2c2;">What is Artificial Intelligence</h3>
-     <hr style="border:1px solid rgb(24, 24, 24);width:600px;">
-         <p>Artificial intelligence is the study and application of computer science, involved with machines performing tasks that would be considered ‘intelligent’ or that a human would be able to do. Artificial intelligence should exhibit similar traits of a person such as problem solving, sensory awareness, planning, object manipulation or have some level of cognitive abilities though is not limited to those attributes.</p>
+   <div style="margin:auto;color:rgb(255, 255, 255);background-color:rgb(50, 50, 50);text-align:center;padding:50px 80px;text-align: justify;"> 
+    <h3 style="color:#c2c2c2;">Artificial Intelligence</h3> 
+    <hr style="border:1px solid rgb(24, 24, 24);width:600px"> 
+
+       <!--Content card 1-->
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://api.time.com/wp-content/uploads/2020/01/artificial-intelligence-white-collar.-work.jpg?w=800&amp;quality=85" alt="AI" style="width:100%;height:200px;">
+      <div class="container">
+        <h2>Introduction</h2>
+          <p>Machine learning is a subset of Artificial Intelligence where a program or system is capable of learning from a given dataset and adapting to certain situations based on its previous experience. Its capacity to learn and change its...</p>
+        <p><button class="button">Link</button></p>
+      </div>
     </div>
   </div>
- 
- <div class="img2"></div>
-
-  <!--Element containing the third section of information--> 
-  <div style="position:relative;"> 
-   <div style="color:rgb(255, 255, 255);background-color:rgb(50, 50, 50);text-align:center;padding:50px 80px;text-align: justify;"> 
-    <h3 style="color:#c2c2c2;">Machine Learning</h3> 
-    <hr style="border:1px solid rgb(24, 24, 24);width:600px">
-       <p>Machine learning is a subset of Artificial Intelligence where a program or system is capable of learning from a given dataset and adapting to certain situations based on its previous experience. Its capacity to learn and change its behaviour without being explicitly programmed defines a machine learning unit to a standard program.
-<br><br>
-Supervised machine learning algorithms learn through example, where the model would be trained with a labelled dataset and then tested with an unlabelled dataset. Through this training the model is able to identify its mistakes from the experience and when introduced to unfamiliar data is able to act appropriately and identify it more accurately. When training through supervised learning if the data set is not already labelled (tagged with the correct answer) a ‘supervisor’ can label whether it was correct or incorrect be it human or another external source.
-<br><br>
-Unsupervised learning, the process of learning without training labels where the AI model is exposed to a dataset, and it predicts an answer and then adapts itself by identifying patterns within the dataset. This can be demonstrated with a human when they learn a new item or concept, especially with a toddler. If a toddler is exposed to a dog it can learn to identify any other dog it meets by seeing if it has two eyes, walks on four legs etc by comparing it with the first dog it came into contact with.
-<br><br>
-Reinforcement learning is a process of machine learning in which an AI is tested within an environment and provided feedback to evaluate and alter its performance. Through a system of reward and punishment or positive and negative evaluation the AI unit is able to adapt to find a desired outcome based on the results it receives. An example of this is a pathfinding AI model, to find the best route possible the AI would have to test all possible paths or outcomes to a maze or environment it is in. For every move or square (if the environment was divided into a grid) the AI model ‘moves’ it will subtract an amount from its score or an external value. By comparing each score it receives, the one with the lowest amount subtracted would result in the fastest route. 
-<br><br>
-   </p>
-    </div>
-   </div>
-     
-<div class="img3"></div>
-     
-     <!--Element containing the third section of information-->
-       <div style="position:relative;">
-    <div style="color:rgb(90, 90, 90);background-color:rgb(255, 255, 255);text-align:center;padding:50px 80px;text-align: justify;">
-     <h3 style="color:#c2c2c2;">Deep Learning</h3>
-     <hr style="border:1px solid rgb(24, 24, 24);width:600px;">
-<p>
-Deep learning is a branch of machine learning, though instead of having smaller amounts of data to read and translate it usually has large quantities and can be divided when processing it into layers called neural network layers. This data instead of being uniform and ordered can be diverse and unordered as there are multiple layers in which it is able to process the data and make decisions accordingly. Each neural network layer has ‘neurons’ which resemble the ones found within the human brain, and based upon results feeded into the neuron determines its output and can act differently according to the result depending on how it was initially programmed to act.
-<br><br>
-The Turing test is an assessment aimed to see a proposed AI’s capabilities and determine whether it is able to mimic a human or reach “Artificial Intelligence” in some form. The test was created and therefore named after Alan Turing, an english computer scientist, cryptanalyst, mathematician and a theoretical biologist. Developed during the 1940’s and 50’s it is based around three terminals or setups, one sectioned off and operated by the AI, the other two manned by two people, a questioner and a respondent. The questioner or tester asks or carries out certain instructions to the AI and the human respondent, then at the end of the test (which is repeated a few times) if the questioner labels the AI (without knowing beforehand) as human then the test is complete and labelled as a success.
-
-</p>
+    
+       <!--Content card 2-->
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://cdn.lowgif.com/medium/c59727d21202020f-sci-fi-circle-exploration-2-by-david-herreman-dribbble.gif" alt="AI" style="width:100%;height:200px;">
+      <div class="container">
+        <h2>Development</h2>
+          <p>Currently many artificial intelligent systems are considered as ‘weak’, meaning that the applications of AI are narrowly focused, where the AI model specialises with a specific task, e.g. playing chess or search recommendations etc...</p>
+        <p><button class="button">Link</button></p>
+      </div>
     </div>
   </div>
-     
- </body></html>
+    
+       <!--Content card 3-->
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://media2.giphy.com/media/d9QiBcfzg64Io/giphy.gif" alt="AI" style="width:100%;height:200px;">
+      <div class="container">
+        <h2>Applications</h2>
+          <p>Game Development: <br>Automationand Robotics: <br>Simulations:</p>
+        <p><button class="button">Link</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+       </div></div>
+  <!--Element containing the first section of information--> 
+  <div style="position:relative;text-align:center;"> 
+   <div style="margin:auto;color:rgb(255, 255, 255);background-color:rgb(50, 50, 50);text-align:center;padding:50px 80px;text-align: justify;"> 
+
+    
+       <!--Content card 2-->
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://entefy.com/uploads/editor/071f8a36715a8a6b7f7ded54074cc8c6.gif" alt="AI" style="width:100%;height:200px;">
+      <div class="container">
+        <h2>Careers</h2>
+          <p>Discover the careers and paths associated in Artificial Intelligence, from a Software Engineer to becoming a Data Scientist. Degree information is also provided.</p>
+        <p><button class="button">Link</button></p>
+      </div>
+    </div>
+  </div>
+
+    
+       <!--Content card 3-->
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://i0.wp.com/windowscustomization.com/wp-content/uploads/2018/10/particles.gif?resize=600%2C365&amp;quality=80&amp;strip=all&amp;ssl=1" alt="AI" style="width:100%;height:200px;">
+      <div class="container">
+        <h2>References</h2>
+          <p>Link to bibliographical page and references.</p>
+        <p><button class="button">Link</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+
+    
+              <!--Alert--> 
+  <div class="alert"> 
+   <span class="closebtn" onclick="this.parentElement.style.display='none';">x</span>Disclaimer: All images used in site and all associated sites are not owned by me but their respective owners. 
+  </div>   
+
+</div></div></div></body></html>
