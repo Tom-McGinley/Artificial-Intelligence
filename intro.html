@@ -1,0 +1,252 @@
+<html><head> 
+  <meta charset="UTF-8" contents="width=device-width, initial-scale=1" name="viewport"> 
+  <title>Artificial Intelligence - Intro | Tom McGinley</title> 
+<style>
+    .sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 4;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+p {
+        font-family: 'Courier New', serif;
+    }
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left .5s;
+  padding: 16px;
+  background-color: black;
+    color: #818181;
+}
+html {
+  height: 100%;
+  margin: 0;
+}
+body {
+  height: 100%;
+  margin: 0;
+}
+.alert {
+    padding: 20px;
+    margin: 15px;
+    background-color: red;
+    color: white;
+    margin-bottom: 15px;
+    transition: opacity 0.6;
+    opacity: 1;
+            }
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+        font: 20px "Calibri", sans-serif;
+            }
+            .closebtn:hover{
+                color: black;
+            }
+.img1, .img2, .img3 {
+ position: relative;
+ opacity: 0.9;
+ background-attachment: fixed;
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ min-height: 360px;
+}
+.img1 {
+ background-image: url("https://api.time.com/wp-content/uploads/2020/01/artificial-intelligence-white-collar.-work.jpg?w=800&quality=85");
+ min-height: 640px;
+ opacity: 0.75;
+ filter: gray-scale(50%);
+            }
+.img2 {
+ background-image: url("https://miro.medium.com/max/3840/1*etDJsZIWf76sb1P_l6ZW3w.gif");
+ opacity: 0.75;
+            }
+.img3 {
+ background-image: url("https://i1.wp.com/www.marktechpost.com/wp-content/uploads/2019/09/ezgif-3-d243f807b32f-2.gif?fit=540%2C360&ssl=1");
+ opacity: 0.75;
+            }
+
+.caption {
+ position: absolute;
+ left: 0;
+ top: 50%;
+ width: 100%;
+ text-align: center;
+ color: rgb(0, 0, 0);
+ opacity: 1;
+ z-index: 10;
+}
+h3 {
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  font: 20px "Courier New", sans-serif;
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
+.title {
+  letter-spacing: 10px;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: black;
+ }
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+      
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background-color: white;
+    color: black;
+}
+
+.container {
+  padding: 0 16px;
+  height: 250px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+    </style>
+    <script>
+    function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+  document.getElementById("main").style.marginLeft = "250px";
+  document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.body.style.backgroundColor = "white";
+}
+    </script>
+</head> 
+ <body> 
+ <!--Navbar-->
+ <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="https://code.dcoder.tech/files/design/5ed9aab7925ae47ccd0e0bae/artificial-intelligence---tom-mcginley">Home</a>
+  <a href="https://code.dcoder.tech/files/design/5ee9a3bb9d04d1511aaa05ee/introduction--ai">Introduction</a>
+  <a href="https://code.dcoder.tech/files/design/5eec23ebf2d50c510db7fec2/development--ai">Development</a>
+  <a href="https://code.dcoder.tech/files/design/5ef02c2902d5050537f035b8/applications--ai">Applications</a>
+  <a href="https://code.dcoder.tech/files/design/5ef097c1ca8ca405368f6c26/careers--ai">Careers</a>
+  <a href="https://code.dcoder.tech/files/design/5ef17255982b81052ea5adad/references--ai">References</a>
+</div>
+
+
+<div id="main">
+<span style="font-size:30px;cursor:pointer;" onclick="openNav()">☰</span>
+</div>
+    
+ 
+  <!--First image of the webpage--> 
+  <div class="img1"> 
+   <div class="caption"> 
+    <span class="title" style="opacity:1;">Introduction - Artificial Intelligence</span> 
+    <hr style="border:1px solid rgb(24, 24, 24);width:900px;"> 
+    <h3>by Tom McGinley</h3> 
+   </div> 
+  </div> 
+  <!--Element containing the first section of information--> 
+  <div style="position:relative;"> 
+   <div style="color:rgb(255, 255, 255);background-color:rgb(50, 50, 50);text-align:center;padding:50px 80px;text-align: justify;"> 
+    <h3 style="color:#c2c2c2;">Alan Turing</h3> 
+    <hr style="border:1px solid rgb(24, 24, 24);width:600px">
+       <p style="text-align:center;">
+           "A computer would deserve to be called intelligent if it could deceive a human into believing that it was human," - Alan Turing
+       </p>
+    </div>
+   </div>
+     
+     <!--Element containing the second section of information-->
+       <div style="position:relative;">
+    <div style="color:rgb(90, 90, 90);background-color:rgb(255, 255, 255);text-align:center;padding:50px 80px;text-align: justify;">
+     <h3 style="color:#c2c2c2;">What is Artificial Intelligence</h3>
+     <hr style="border:1px solid rgb(24, 24, 24);width:600px;">
+         <p>Artificial intelligence is the study and application of computer science, involved with machines performing tasks that would be considered ‘intelligent’ or that a human would be able to do. Artificial intelligence should exhibit similar traits of a person such as problem solving, sensory awareness, planning, object manipulation or have some level of cognitive abilities though is not limited to those attributes.</p>
+    </div>
+  </div>
+ 
+ <div class="img2"></div>
+
+  <!--Element containing the third section of information--> 
+  <div style="position:relative;"> 
+   <div style="color:rgb(255, 255, 255);background-color:rgb(50, 50, 50);text-align:center;padding:50px 80px;text-align: justify;"> 
+    <h3 style="color:#c2c2c2;">Machine Learning</h3> 
+    <hr style="border:1px solid rgb(24, 24, 24);width:600px">
+       <p>Machine learning is a subset of Artificial Intelligence where a program or system is capable of learning from a given dataset and adapting to certain situations based on its previous experience. Its capacity to learn and change its behaviour without being explicitly programmed defines a machine learning unit to a standard program.
+<br><br>
+Supervised machine learning algorithms learn through example, where the model would be trained with a labelled dataset and then tested with an unlabelled dataset. Through this training the model is able to identify its mistakes from the experience and when introduced to unfamiliar data is able to act appropriately and identify it more accurately. When training through supervised learning if the data set is not already labelled (tagged with the correct answer) a ‘supervisor’ can label whether it was correct or incorrect be it human or another external source.
+<br><br>
+Unsupervised learning, the process of learning without training labels where the AI model is exposed to a dataset, and it predicts an answer and then adapts itself by identifying patterns within the dataset. This can be demonstrated with a human when they learn a new item or concept, especially with a toddler. If a toddler is exposed to a dog it can learn to identify any other dog it meets by seeing if it has two eyes, walks on four legs etc by comparing it with the first dog it came into contact with.
+<br><br>
+Reinforcement learning is a process of machine learning in which an AI is tested within an environment and provided feedback to evaluate and alter its performance. Through a system of reward and punishment or positive and negative evaluation the AI unit is able to adapt to find a desired outcome based on the results it receives. An example of this is a pathfinding AI model, to find the best route possible the AI would have to test all possible paths or outcomes to a maze or environment it is in. For every move or square (if the environment was divided into a grid) the AI model ‘moves’ it will subtract an amount from its score or an external value. By comparing each score it receives, the one with the lowest amount subtracted would result in the fastest route. 
+<br><br>
+   </p>
+    </div>
+   </div>
+     
+<div class="img3"></div>
+     
+     <!--Element containing the third section of information-->
+       <div style="position:relative;">
+    <div style="color:rgb(90, 90, 90);background-color:rgb(255, 255, 255);text-align:center;padding:50px 80px;text-align: justify;">
+     <h3 style="color:#c2c2c2;">Deep Learning</h3>
+     <hr style="border:1px solid rgb(24, 24, 24);width:600px;">
+<p>
+Deep learning is a branch of machine learning, though instead of having smaller amounts of data to read and translate it usually has large quantities and can be divided when processing it into layers called neural network layers. This data instead of being uniform and ordered can be diverse and unordered as there are multiple layers in which it is able to process the data and make decisions accordingly. Each neural network layer has ‘neurons’ which resemble the ones found within the human brain, and based upon results feeded into the neuron determines its output and can act differently according to the result depending on how it was initially programmed to act.
+<br><br>
+The Turing test is an assessment aimed to see a proposed AI’s capabilities and determine whether it is able to mimic a human or reach “Artificial Intelligence” in some form. The test was created and therefore named after Alan Turing, an english computer scientist, cryptanalyst, mathematician and a theoretical biologist. Developed during the 1940’s and 50’s it is based around three terminals or setups, one sectioned off and operated by the AI, the other two manned by two people, a questioner and a respondent. The questioner or tester asks or carries out certain instructions to the AI and the human respondent, then at the end of the test (which is repeated a few times) if the questioner labels the AI (without knowing beforehand) as human then the test is complete and labelled as a success.
+
+</p>
+    </div>
+  </div>
+     
+ </body></html>
