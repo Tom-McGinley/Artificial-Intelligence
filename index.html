@@ -40,8 +40,9 @@
   transition: margin-left .5s;
   padding: 16px;
 }
-html {              height: 100%;
-              margin: 0;
+html {              
+  height: 100%;
+  margin: 0;
             }
             body {
               height: 100%;
@@ -124,6 +125,7 @@ html {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     background-color: white;
     color: black;
+  border-radius: 15px;
 }
 
 .container {
@@ -139,6 +141,11 @@ html {
     p {
         font-family: 'Courier New', serif;
     }
+      .sidenav .active{
+        background-color: #40c742;
+        color: white;
+    }
+
 </style> 
 <script>
     function openNav() {
@@ -159,7 +166,7 @@ function closeNav() {
  <!--Navbar-->
  <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="https://tom-mcginley.github.io/Artificial-Intelligence/">Home</a>
+  <a class="active" href="https://tom-mcginley.github.io/Artificial-Intelligence/">Home</a>
   <a href="https://tom-mcginley.github.io/Artificial-Intelligence/intro">Introduction</a>
   <a href="https://tom-mcginley.github.io/Artificial-Intelligence/development">Development</a>
   <a href="https://tom-mcginley.github.io/Artificial-Intelligence/applications">Applications</a>
